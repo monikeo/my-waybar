@@ -136,13 +136,11 @@ button:hover {
 }
 
 #clock {
-    color: #a6adc8;
-    border-radius: 10px 10px 10px 10px;
     margin-left: 5px;
     border-right: 0px;
 }
 
-#temperature {
+#clock, #temperature {
     color: #a6adc8;
     border-radius: 10px 10px 10px 10px;
 }
@@ -197,12 +195,13 @@ label:focus {
 }
 
 #cpu {
-    color: #000000;
+    color: #a6adc8;
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
 
 #memory {
+    color: #a6adc8;
     border-radius: 10px 0px 0px 10px;
 }
 
