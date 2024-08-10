@@ -23,10 +23,6 @@
     "modules-left": [
         "clock",
         "hyprland/workspaces"
-	//"hyprland/window",
-    //    "sway/mode",
-    //    "sway/scratchpad",
-    //    "custom/media"
     ],
     "modules-center": [
         "hyprland/window"
@@ -41,17 +37,6 @@
         "pulseaudio",
         "pulseaudio#microphone",
         "temperature"
-       // "mpd",
-       // "pulseaudio",
-       // "network",
-       // "power-profiles-daemon",
-       // "backlight",
-       // "keyboard-state",
-       // "sway/language",
-       // "battery",
-       // "battery#bat2",
-	//"group/hardware",
-    //    "tray"
     ],
     "group/hardware": {
 	"orientation": "horizontal",
@@ -166,7 +151,7 @@
     },
     "cpu": {
         "interval": 10,
-        "format": "󰍛  {usage}%",
+        "format": "󰍛 {usage}%",
         "format-alt": "{icon0}{icon1}{icon2}{icon3}",
         "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
         "tooltip": false
@@ -178,11 +163,11 @@
             "m": 30 // medium
         },
         "interval": 10,
-        "format": "󰾆  {used}GB",
-        "format-m": "󰾅  {used}GB",
-        "format-h": "󰓅  {used}GB",
-        "format-c": "  {used}GB",
-        "format-alt": "󰾆  {percentage}%",
+        "format": "󰾆 {used}GB",
+        "format-m": "󰾅 {used}GB",
+        "format-h": "󰓅 {used}GB",
+        "format-c": " {used}GB",
+        "format-alt": "󰾆 {percentage}%",
         "max-length": 10,
         "tooltip": true,
         "tooltip-format": "󰾆 {percentage}%\n {used:0.1f}GB/{total:0.1f}GB"
@@ -211,8 +196,8 @@
         },
         "format": "{icon} {capacity}%",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "  {capacity}%",
-        "format-plugged": "  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
@@ -232,7 +217,7 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "tooltip": true,
-        "format-wifi": "   {essid}",
+        "format-wifi": "  {essid}",
         "format-ethernet": "󰈀 ",
         "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
         "format-linked": "󰈀  {ifname} (No IP)",
